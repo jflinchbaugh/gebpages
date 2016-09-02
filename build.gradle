@@ -25,5 +25,27 @@ dependencies {
     // We use the awesome Spock testing and specification framework
     testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
 
-    compile group: 'org.gebish', name: 'geb-core', version: '0.13.1'
+    def gebVersion = '0.13.1'
+    def seleniumVersion = '2.53.1'
+    compile(
+        group: 'org.gebish',
+        name: 'geb-core',
+        version: gebVersion
+    )
+    compile(
+        group: 'org.seleniumhq.selenium',
+        name: 'selenium-firefox-driver',
+        version: seleniumVersion
+    )
+    compile(
+        group: 'org.seleniumhq.selenium',
+        name: 'selenium-support',
+        version: seleniumVersion
+    )
+
+    testCompile(
+        group: 'org.gebish',
+        name: 'geb-spock',
+        version: gebVersion
+    )
 }
