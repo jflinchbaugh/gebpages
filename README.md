@@ -10,3 +10,16 @@ The library is built upon:
 * [Groovy](http://www.groovy-lang.org/)
 * [Geb](http://www.gebish.org/)
 * [Selenium Web Driver](http://www.seleniumhq.org/projects/webdriver/)
+
+```
+Browser.drive {
+    to GoogleSearch
+    search('automation')
+    results.each { r ->
+        println "${r.title} - ${r.url}"
+    }
+    relatedSearches.each { s ->
+        println "${s.title}"
+    }
+}
+```
