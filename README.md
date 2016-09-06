@@ -29,7 +29,8 @@ Browser.drive {
 
 ## Setup
 
-0. Download, unpack,
+0. [Download](https://github.com/mozilla/geckodriver/releases),
+   unpack,
    and copy the ```geckodriver```
    for Firefox into your path.
 0. ```./gradlew clean test``` to run the existing test suite.
