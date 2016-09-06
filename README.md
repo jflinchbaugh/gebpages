@@ -10,6 +10,7 @@ The library is built upon:
 * [Groovy](http://www.groovy-lang.org/)
 * [Geb](http://www.gebish.org/)
 * [Selenium Web Driver](http://www.seleniumhq.org/projects/webdriver/)
+* [GeckoDriver for Firefox](https://github.com/mozilla/geckodriver/releases)
 
 ```
 Browser.drive {
@@ -23,3 +24,4 @@ Browser.drive {
     }
 }
 ```
+
