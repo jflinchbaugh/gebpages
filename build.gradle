@@ -55,3 +55,9 @@ dependencies {
         version: gebVersion
     )
 }
+
+test {
+    testLogging {
+        showStandardStreams = true
+    }
+}
