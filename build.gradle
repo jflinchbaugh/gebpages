@@ -20,13 +20,13 @@ repositories {
 // In this section you declare the dependencies for your production and test code
 dependencies {
     // We use the latest groovy 2.x version for building this library
-    compile 'org.codehaus.groovy:groovy-all:2.4.7'
+    compile 'org.codehaus.groovy:groovy-all:2.5.7'
 
     // We use the awesome Spock testing and specification framework
     testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
 
-    def gebVersion = '0.13.1'
-    def seleniumVersion = '3.0.0-beta3'
+    def gebVersion = '3.0'
+    def seleniumVersion = '3.141.59'
     compile(
         group: 'org.gebish',
         name: 'geb-core',
@@ -40,9 +40,9 @@ dependencies {
     compile(
         group: 'org.seleniumhq.selenium',
         name: 'htmlunit-driver',
-        version: '2.23'
+        version: '2.35.1'
     )
-    compile 'net.sourceforge.htmlunit:htmlunit:2.23'
+    compile 'net.sourceforge.htmlunit:htmlunit:2.35.0'
     compile(
         group: 'org.seleniumhq.selenium',
         name: 'selenium-support',
