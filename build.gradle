@@ -48,7 +48,6 @@ dependencies {
         name: 'selenium-support',
         version: seleniumVersion
     )
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.8'
 
     testCompile(
         group: 'org.gebish',
